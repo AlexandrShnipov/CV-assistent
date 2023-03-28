@@ -1,0 +1,59 @@
+.experience h2{
+    margin-bottom: .7rem;
+}
+
+.experience li {
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.experience {
+    padding-bottom: 1rem;
+    border-bottom: 3px solid black;
+}
+
+.frontendBlock {
+    margin-bottom: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid black;
+}
+
+.customsBlock,
+.frontendBlock {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.customsBlock p,
+.frontendBlock p {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+/*print*/
+
+@media print {
+    .experience {
+        padding-bottom: .4rem;
+    }
+
+    .experience h2{
+        margin-bottom: .3rem;
+    }
+
+    .experience li {
+        font-size: 1.2rem;
+        line-height: 1.1;
+    }
+
+    .customsBlock,
+    .frontendBlock {
+        gap: .3rem;
+    }
+
+    .customsBlock p,
+    .frontendBlock p {
+        font-size: 1.2rem;
+    }
+}

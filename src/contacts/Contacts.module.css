@@ -1,0 +1,111 @@
+.contactsList {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.contactsListItemIcons,
+.contactsListItemIcon {
+    width: 3rem;
+    height: 3rem;
+}
+
+.iconsTel {
+    margin-right: .5rem;
+}
+
+.contactsListItem {
+    list-style: none;
+}
+
+.contactsListItemLink {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    animation: animatedForLink 5s linear 2s infinite;
+}
+
+.contactsListItemLink:hover {
+    opacity: .7;
+}
+
+.contactsListItemText {
+    display: none;
+}
+
+@keyframes animatedForLink {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@media only screen and (max-width: 682px) {
+    .contactsListItemLink span {
+        display: none;
+    }
+
+    .iconsTel {
+        margin-right: 0;
+    }
+
+    .contactsList {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .contactsListItemIcons,
+    .contactsListItemIcon {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .contactsList {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+/*print*/
+
+
+@media print {
+    .contactsListItemLink {
+        /*flex-direction: column;*/
+        gap: .5rem;
+    }
+
+    .contactsList {
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .5rem;
+    }
+
+    .contactsListItemIcons,
+    .contactsListItemIcon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .contactsListItemText {
+        display: block;
+    }
+
+    .iconsTel {
+        margin-right: 0;
+    }
+}

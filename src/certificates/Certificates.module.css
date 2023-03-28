@@ -1,0 +1,44 @@
+.certificates h2 {
+    margin-bottom: .7rem;
+}
+
+.certificatesList{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.certificatesListItem {
+    list-style: none;
+}
+
+.certificatesListItemTitle {
+    margin-bottom: .5rem;
+}
+
+.certificatesListItemTitle a > strong {
+    color: black;
+}
+
+.certificatesListItemTitle > a {
+    color: inherit;
+}
+
+.certificatesListItemTitle > a:hover,
+.certificatesListItemTitle a > strong:hover {
+    color: blue;
+}
+
+.certificatesListItem:not(:last-child) {
+    padding-bottom: .5rem;
+    border-bottom: 1px solid black;
+}
+
+/*print*/
+
+@media print {
+    .certificates h2 {
+        margin-bottom: .4rem;
+    }
+}
+
