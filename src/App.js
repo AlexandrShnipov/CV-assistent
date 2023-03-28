@@ -45,17 +45,17 @@ const App = () => {
             <button className={currentState === statePl
               ? `${s.changeLanguageButton} ${s.active}`
               : s.changeLanguageButton}
-                    onClick={makePoland}>POL
+                    onClick={makePoland}>PL
             </button>
             <button className={currentState === stateEng
               ? `${s.changeLanguageButton} ${s.active}`
               : s.changeLanguageButton}
-                    onClick={makeEnglish}>ENG
+                    onClick={makeEnglish}>EN
             </button>
             <button className={currentState === stateBy
               ? `${s.changeLanguageButton} ${s.active}`
               : s.changeLanguageButton}
-                    onClick={makeBelarus}>BLR
+                    onClick={makeBelarus}>BY
             </button>
             <ButtonForPrint/>
           </div>
